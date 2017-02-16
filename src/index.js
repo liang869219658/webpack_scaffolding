@@ -6,9 +6,9 @@ import configureStore from './store/configureStore';
 import { RouterConfig } from './routes';
 import './scss/index.scss';
 
-let initialState = {
+const initialState = {
 	user: {
-    token: null
+    token: "hello,world!"
   }
 }
 

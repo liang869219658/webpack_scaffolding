@@ -32,7 +32,7 @@ App.contextTypes = {
 
 
 const mapStateToProps = (state) => ({
-
+  user: state.user,
 });
 
 function mapDispatchToProps(dispatch) {
