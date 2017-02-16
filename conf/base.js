@@ -68,7 +68,7 @@ module.exports = {
       ]
     },
     plugins: [
-      new HtmlWebpackPlugin({
+      new HtmlWebpackPlugin({     // 生成html文件，或者使用html模板
         title: 'your app title',
         template: commonPath.indexHTML
       }),

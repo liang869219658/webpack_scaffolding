@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
-import { MyComponent } from '../../components';
+import React, { Component, PropTypes } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as Actions from '../../actions/index';
+import { MyComponent } from '../../components/index';
 
 import './index.css';
 
@@ -13,12 +16,28 @@ class App extends Component {
       <div>
         <MyComponent />
         <p>
-          欢迎在github上一起维护这个脚手架项目<br />
-          https://github.com/GuoYongfeng
+          这是我的自己搭建的脚手架<br />
+        https://github.com/liang869219658
         </p>
       </div>
     );
   }
 }
 
-export default App;
+
+
+App.contextTypes = {
+	router: React.PropTypes.object.isRequired
+};
+
+
+const mapStateToProps = (state) => ({
+
+});
+
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators(Actions, dispatch);
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
