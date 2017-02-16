@@ -16,8 +16,8 @@ class App extends Component {
       <div>
         <MyComponent />
         <p>
-          这是我的自己搭建的脚手架<br />
-        https://github.com/liang869219658
+          欢迎在github上一起维护这个脚手架项目<br />
+          https://github.com/GuoYongfeng
         </p>
       </div>
     );
